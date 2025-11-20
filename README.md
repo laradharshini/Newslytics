@@ -7,7 +7,6 @@ A Flask-based intelligent news analysis platform that extracts, summarizes, comp
 * User Auth (Signup, Login, Sessions)
 * Extract news from URLs or uploaded files (PDF, DOCX, TXT, Images via OCR)
 * NLP Analysis
-
   * Named Entities (spaCy)
   * Keywords & Key Insights
   * Multi-length Summaries
