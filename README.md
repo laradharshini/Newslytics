@@ -4,20 +4,20 @@ A Flask-based intelligent news analysis platform that extracts, summarizes, comp
 
 ## Features
 
-* 🔐 User Auth (Signup, Login, Sessions)
-* 🌐 Extract news from URLs or uploaded files (PDF, DOCX, TXT, Images via OCR)
-* 🧠 NLP Analysis
+* User Auth (Signup, Login, Sessions)
+* Extract news from URLs or uploaded files (PDF, DOCX, TXT, Images via OCR)
+* NLP Analysis
 
   * Named Entities (spaCy)
   * Keywords & Key Insights
   * Multi-length Summaries
   * Sentiment Scores
   * Crisis-Level Detection
-* 🔍 Compare up to 5 articles
+* Compare up to 5 articles
 
   * Semantic similarity (Sentence Transformers)
   * Keyword/Entity overlap fallback
-* 📄 Export PDF / TXT reports
+* Export PDF / TXT reports
 * 🌎 Translate text into multiple languages
 * 📊 History tracking (MongoDB)
 
@@ -31,6 +31,17 @@ A Flask-based intelligent news analysis platform that extracts, summarizes, comp
 * ReportLab (PDF)
 * OCR: Tesseract + Pillow
 * PyPDF2, python-docx, deep-translator
+
+## Project Structure
+
+```
+app.py
+templates/
+static/
+uploads/
+requirements.txt
+README.md
+```
   
 ## Setup
 
@@ -98,13 +109,10 @@ UPLOAD_FOLDER=uploads
 * Add rate limiting for analysis endpoints
 * Prefer HTTPS + secure session cookies
 
-## Project Structure
+## TODO
 
-```
-app.py
-templates/
-static/
-uploads/
-requirements.txt
-README.md
-```
+* Implement password reset with secure email token
+* Add progress indicators for long operations (OCR, PDF generation)
+* Improve sentiment analysis using an ML model instead of keyword matching
+* Save article embeddings to the database to speed up comparisons
+* Add Docker Compose (Flask + MongoDB) for easy deployment
