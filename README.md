@@ -18,8 +18,8 @@ A Flask-based intelligent news analysis platform that extracts, summarizes, comp
   * Semantic similarity (Sentence Transformers)
   * Keyword/Entity overlap fallback
 * Export PDF / TXT reports
-* 🌎 Translate text into multiple languages
-* 📊 History tracking (MongoDB)
+* Translate text into multiple languages
+* History tracking (MongoDB)
 
 ## Tech Stack
 
@@ -109,7 +109,7 @@ UPLOAD_FOLDER=uploads
 * Add rate limiting for analysis endpoints
 * Prefer HTTPS + secure session cookies
 
-## TODO
+## To do
 
 * Implement password reset with secure email token
 * Add progress indicators for long operations (OCR, PDF generation)
