@@ -2,9 +2,7 @@
 
 A Flask-based intelligent news analysis platform that extracts, summarizes, compares, and translates news articles. Newslytics supports URLs and file uploads, performs NLP analysis, generates insights, and exports professional PDF reports.
 
----
-
-## **Features**
+# Features
 
 * 🔐 User Auth (Signup, Login, Sessions)
 * 🌐 Extract news from URLs or uploaded files (PDF, DOCX, TXT, Images via OCR)
@@ -23,9 +21,7 @@ A Flask-based intelligent news analysis platform that extracts, summarizes, comp
 * 🌎 Translate text into multiple languages
 * 📊 History tracking (MongoDB)
 
----
-
-## **Tech Stack**
+# Tech Stack
 
 * Python, Flask
 * MongoDB + Flask-PyMongo
@@ -35,10 +31,8 @@ A Flask-based intelligent news analysis platform that extracts, summarizes, comp
 * ReportLab (PDF)
 * OCR: Tesseract + Pillow
 * PyPDF2, python-docx, deep-translator
-
----
-
-## **Setup**
+  
+# Setup
 
 ### **1. Install dependencies**
 
@@ -70,9 +64,7 @@ python app.py
 
 Visit: **[http://127.0.0.1:5000](http://127.0.0.1:5000)**
 
----
-
-## **Environment Variables**
+# Environment Variables
 
 Set these before running:
 
@@ -82,9 +74,7 @@ MONGO_URI=mongodb://localhost:27017/newslytics
 UPLOAD_FOLDER=uploads
 ```
 
----
-
-## **Core Endpoints**
+# Core Endpoints
 
 * `POST /signup` — Create account
 * `POST /login` — Login
@@ -95,26 +85,20 @@ UPLOAD_FOLDER=uploads
 * `POST /api/translate` — Translate text
 * `GET /history` — User history
 
----
-
-## **File Support**
+# File Support
 
 * `.txt`, `.pdf`, `.docx`, `.jpg`, `.jpeg`, `.png`
 * Max file: **16MB**
 * OCR enabled for images
 
----
-
-## **Security Notes**
+# Security Notes
 
 * Use strong `SECRET_KEY`
 * Use authenticated MongoDB in production
 * Add rate limiting for analysis endpoints
 * Prefer HTTPS + secure session cookies
 
----
-
-## **Project Structure**
+# Project Structure
 
 ```
 app.py
@@ -124,5 +108,3 @@ uploads/
 requirements.txt
 README.md
 ```
-
----
