@@ -2,7 +2,7 @@
 
 A Flask-based intelligent news analysis platform that extracts, summarizes, compares, and translates news articles. Newslytics supports URLs and file uploads, performs NLP analysis, generates insights, and exports professional PDF reports.
 
-# Features
+## Features
 
 * 🔐 User Auth (Signup, Login, Sessions)
 * 🌐 Extract news from URLs or uploaded files (PDF, DOCX, TXT, Images via OCR)
